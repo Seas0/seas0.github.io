@@ -23,7 +23,7 @@
       <pubDate>Sat, 14 Nov 2020 19:59:27 +0800</pubDate>
       
       <guid>https://seas0.github.io/about/</guid>
-      <description>systemctl status seas0 ● seas0.service - OpenSSH Daemon Loaded: loaded Active: active Tasks: Unknown Memory: Unknown sudo cat /etc/seas0.d/seas0.json { &amp;#34;currentStatus&amp;#34;: &amp;#34;A HUSTer&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;A Former OIer&amp;#34;, &amp;#34;todoList&amp;#34;: [ &amp;#34;Caculus&amp;#34;, &amp;#34;Linear Algebra&amp;#34;, &amp;#34;OpenCV&amp;#34;, &amp;#34;MATLAB&amp;#34;, &amp;#34;CMake&amp;#34;, &amp;#34;Python3&amp;#34;, &amp;#34;Git&amp;#34;, &amp;#34;x86 Assembly&amp;#34;, &amp;#34;Verilog&amp;#34;, &amp;#34;STM32&amp;#34;, &amp;#34;FPGA&amp;#34;, &amp;#34;etc&amp;#34; ] } $$ \KaTeX\ Support\ (like\ \LaTeX) $$</description>
+      <description>systemctl status seas0 ● seas0.service - Season (as a Coder) Daemon Loaded: loaded Active: active Tasks: Unknown Memory: Unknown sudo cat /etc/seas0.d/seas0.json { &amp;#34;currentStatus&amp;#34;: &amp;#34;A HUSTer&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;A Former OIer&amp;#34;, &amp;#34;todoList&amp;#34;: [ &amp;#34;Caculus&amp;#34;, &amp;#34;Linear Algebra&amp;#34;, &amp;#34;OpenCV&amp;#34;, &amp;#34;MATLAB&amp;#34;, &amp;#34;CMake&amp;#34;, &amp;#34;Python3&amp;#34;, &amp;#34;Git&amp;#34;, &amp;#34;x86 Assembly&amp;#34;, &amp;#34;Verilog&amp;#34;, &amp;#34;STM32&amp;#34;, &amp;#34;FPGA&amp;#34;, &amp;#34;etc&amp;#34; ] } $$ \KaTeX\ Support\ (like\ \LaTeX) $$</description>
     </item>
     
   </channel>
