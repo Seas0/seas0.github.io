@@ -10,8 +10,9 @@
     
     <meta name="viewport" content="width=device-width">
     <meta name="description"
-        content="STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，故
-基础题 T1 " />
+        content="STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，先试试吧
+基础题 T1 简易电子琴 以NE555 Timer为核心的多谐振荡器
+NE555的内部结构: 引脚定义    名称 管脚 I/O 作用     GND 1 N/A 接地   TRIG 2 I 触发脚,$U_{trig} &amp;lt; \frac{1}{2}U_{cont}$时,设置$U_{out}$为高电位,DISCH开路   OUT 3 O 输出脚,输出高/低电平($I_{out_{max}} \approx 200\ mA$)   RESET 4 I 重置脚,输入低电平时重置计时器,通常接$V_{cc}$   CONT 5 I/O 可用于控制触发阈值,默认 $\frac{2}{3}V_{cc}$   THRES 6 I 触发重置脚,$U_{thres}&amp;gt;U_{cont}$时,设置$U_{out}$为低电位,DISCH接地   DISCH 7 O 放电脚,集电极开路电路,可输出低电平/高阻态,为计时器电容放电($I_{disch_{max}} \approx 200\ mA$)   VCC 8 N/A 电源输入($4." />
     <meta name="keywords"
         content="blog, google analytics" />
     <meta name="robots" content="noodp" />
@@ -21,8 +22,9 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="STI Writeup - Seas0&#39;s Blog" />
     <meta name="twitter:description"
-        content="STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，故
-基础题 T1 " />
+        content="STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，先试试吧
+基础题 T1 简易电子琴 以NE555 Timer为核心的多谐振荡器
+NE555的内部结构: 引脚定义    名称 管脚 I/O 作用     GND 1 N/A 接地   TRIG 2 I 触发脚,$U_{trig} &amp;lt; \frac{1}{2}U_{cont}$时,设置$U_{out}$为高电位,DISCH开路   OUT 3 O 输出脚,输出高/低电平($I_{out_{max}} \approx 200\ mA$)   RESET 4 I 重置脚,输入低电平时重置计时器,通常接$V_{cc}$   CONT 5 I/O 可用于控制触发阈值,默认 $\frac{2}{3}V_{cc}$   THRES 6 I 触发重置脚,$U_{thres}&amp;gt;U_{cont}$时,设置$U_{out}$为低电位,DISCH接地   DISCH 7 O 放电脚,集电极开路电路,可输出低电平/高阻态,为计时器电容放电($I_{disch_{max}} \approx 200\ mA$)   VCC 8 N/A 电源输入($4." />
     <meta name="twitter:site" content="https://seas0.github.io" />
     <meta name="twitter:creator" content="" />
     <meta name="twitter:image"
@@ -32,8 +34,9 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="STI Writeup - Seas0&#39;s Blog">
     <meta property="og:description"
-        content="STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，故
-基础题 T1 " />
+        content="STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，先试试吧
+基础题 T1 简易电子琴 以NE555 Timer为核心的多谐振荡器
+NE555的内部结构: 引脚定义    名称 管脚 I/O 作用     GND 1 N/A 接地   TRIG 2 I 触发脚,$U_{trig} &amp;lt; \frac{1}{2}U_{cont}$时,设置$U_{out}$为高电位,DISCH开路   OUT 3 O 输出脚,输出高/低电平($I_{out_{max}} \approx 200\ mA$)   RESET 4 I 重置脚,输入低电平时重置计时器,通常接$V_{cc}$   CONT 5 I/O 可用于控制触发阈值,默认 $\frac{2}{3}V_{cc}$   THRES 6 I 触发重置脚,$U_{thres}&amp;gt;U_{cont}$时,设置$U_{out}$为低电位,DISCH接地   DISCH 7 O 放电脚,集电极开路电路,可输出低电平/高阻态,为计时器电容放电($I_{disch_{max}} \approx 200\ mA$)   VCC 8 N/A 电源输入($4." />
     <meta property="og:url" content="https://seas0.github.io/posts/sti-writeup/" />
     <meta property="og:site_name" content="STI Writeup" />
     <meta property="og:image"
@@ -168,7 +171,7 @@ if (!doNotTrack) {
                     <div class="Box mt-3 position-relative">
                         <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
                             <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                                39 Words
+                                500 Words
                                 
                             </div>
                         </div>
@@ -176,9 +179,83 @@ if (!doNotTrack) {
                         <div id="readme" class="Box-body readme blob instapaper_body js-code-block-container">
                             <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><h1 id="sti-招新题writeup">STI 招新题WriteUP</h1>
 <h2 id="背景">背景</h2>
-<p>今年疫情情况不明，STI招新仅有一轮试题，故</p>
+<p>今年疫情情况不明，STI招新仅有一轮试题，先试试吧</p>
 <h2 id="基础题">基础题</h2>
-<h3 id="t1">T1</h3>
+<h3 id="t1-简易电子琴">T1 简易电子琴</h3>
+<p>以NE555 Timer为核心的多谐振荡器</p>
+<h4 id="ne555的内部结构">NE555的内部结构:</h4>
+<p><img src="NE555.png" alt="NE555"></p>
+<h4 id="引脚定义">引脚定义</h4>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>管脚</th>
+<th>I/O</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GND</td>
+<td>1</td>
+<td>N/A</td>
+<td>接地</td>
+</tr>
+<tr>
+<td>TRIG</td>
+<td>2</td>
+<td>I</td>
+<td>触发脚,$U_{trig} &lt; \frac{1}{2}U_{cont}$时,设置$U_{out}$为高电位,DISCH开路</td>
+</tr>
+<tr>
+<td>OUT</td>
+<td>3</td>
+<td>O</td>
+<td>输出脚,输出高/低电平($I_{out_{max}} \approx 200\ mA$)</td>
+</tr>
+<tr>
+<td>RESET</td>
+<td>4</td>
+<td>I</td>
+<td>重置脚,输入低电平时重置计时器,通常接$V_{cc}$</td>
+</tr>
+<tr>
+<td>CONT</td>
+<td>5</td>
+<td>I/O</td>
+<td>可用于控制触发阈值,默认 $\frac{2}{3}V_{cc}$</td>
+</tr>
+<tr>
+<td>THRES</td>
+<td>6</td>
+<td>I</td>
+<td>触发重置脚,$U_{thres}&gt;U_{cont}$时,设置$U_{out}$为低电位,DISCH接地</td>
+</tr>
+<tr>
+<td>DISCH</td>
+<td>7</td>
+<td>O</td>
+<td>放电脚,集电极开路电路,可输出低电平/高阻态,为计时器电容放电($I_{disch_{max}} \approx 200\ mA$)</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>8</td>
+<td>N/A</td>
+<td>电源输入($4.5\ V \le V_{cc} \le 16\ V$)</td>
+</tr>
+</tbody>
+</table>
+<p>故NE555的触发功能主要由两个比较器与一个RS锁存器实现</p>
+<h4 id="本题电路图">本题电路图</h4>
+<p><img src="circuit.png" alt="circuit"></p>
+<h4 id="流程分析">流程分析</h4>
+<p>上电后, C~2~ C~3~ 的存在使5脚CONT,6脚THRES,2脚TRIG为低电位。C~2~ 充电后 ,先有 $U_{trig} &lt; \frac{1}{2}U_{cont}$ 触发$U_{out}$为高电位,DISCH开路，电路稳定。</p>
+<p>按下任一按键后，C~3~ 逐渐充电</p>
+<blockquote>
+<p>参考:</p>
+<p><a href="ne555.pdf">https://www.ti.com/lit/ds/symlink/ne555.pdf</a></p>
+</blockquote>
 </article>
                         </div>
                     </div>
@@ -242,6 +319,16 @@ if (!doNotTrack) {
 <script src="https://seas0.github.io/js/stop.js"></script>
 <script src="https://seas0.github.io/js/contributions.js"></script>
 
+<script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$", right: "$", display: false}
+              ]
+          }
+      );
+</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
