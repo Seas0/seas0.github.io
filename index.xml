@@ -7,14 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2020. Theme by &lt;a href=&#34;https://github.com/MeiK2333/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 14 Nov 2020 20:05:15 +0800</lastBuildDate><atom:link href="https://seas0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Nov 2020 00:15:34 +0800</lastBuildDate><atom:link href="https://seas0.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First</title>
+      <title>STI Writeup</title>
+      <link>https://seas0.github.io/posts/sti-writeup/</link>
+      <pubDate>Sun, 15 Nov 2020 00:15:34 +0800</pubDate>
+      
+      <guid>https://seas0.github.io/posts/sti-writeup/</guid>
+      <description>STI 招新题WriteUP 背景 今年疫情情况不明，STI招新仅有一轮试题，故
+基础题 T1 </description>
+    </item>
+    
+    <item>
+      <title>First, A New Start.</title>
       <link>https://seas0.github.io/posts/first/</link>
       <pubDate>Sat, 14 Nov 2020 20:05:15 +0800</pubDate>
       
       <guid>https://seas0.github.io/posts/first/</guid>
-      <description>New date.</description>
+      <description>又到了写博客的时间。(上次这么说似乎还是2017年😂)
+距高中毕业不觉已有几个月，高考发挥并不理想的本菜鸡显然并没有成为京城人上人，只能在HUST继续水一水了🙄。
+记得每周写写博客，记录学习进度，防止搞颓。
+@颇具魔幻现实主义色彩的2020年</description>
     </item>
     
     <item>
