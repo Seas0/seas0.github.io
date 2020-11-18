@@ -174,7 +174,7 @@ if (!doNotTrack) {
                     <div class="Box mt-3 position-relative">
                         <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
                             <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                                673 Words
+                                859 Words
                                 
                             </div>
                         </div>
@@ -271,7 +271,7 @@ if (!doNotTrack) {
 
 <h4 id="本题电路图">本题电路图</h4>
 
-<p><figure><img src="circuit.png" alt="circuit"></figure></p>
+<p><figure><img src="circuit-1.png" alt="circuit"></figure></p>
 
 <h4 id="流程分析">流程分析</h4>
 
@@ -287,7 +287,41 @@ if (!doNotTrack) {
 <p><a href="ne555.pdf">https://www.ti.com/lit/ds/symlink/ne555.pdf</a></p>
 </blockquote>
 
-<h3 id="t3">T3</h3>
+<h3 id="t3-简易光控灯">T3 简易光控灯</h3>
+
+<p>BJT的基本使用</p>
+
+<h4 id="本题电路图-1">本题电路图</h4>
+
+<p><figure><img src="circuit-2.png" alt="circuit"></figure></p>
+
+<h4 id="流程分析-1">流程分析</h4>
+
+<p>R<sub>1</sub> 与 R<sub>3</sub> 构成分压电路，又 R<sub>3</sub> 在光线变亮时电阻减小</p>
+
+<p>故由 BJT 的伏安特性曲线</p>
+
+<p><figure><img src="BJT.png" alt="image-20201117192047518"></figure></p>
+
+<p>可知：</p>
+
+<p>Q<sub>2</sub> 的 <span  class="math">\(i_b\)</span> <span  class="math">\(i_{ce}\)</span> 增大，故 Q<sub>1</sub> <span  class="math">\(u_{be}\)</span> 下降，故 <span  class="math">\(i_{d}\)</span> 增大，LED发光</p>
+
+<blockquote>
+<p>参考:</p>
+
+<p>《新概念模拟电路》，杨建国</p>
+</blockquote>
+
+<h2 id="提高题">提高题</h2>
+
+<h3 id="t2-直流直流升压变换器">T2 直流直流升压变换器</h3>
+
+<p>Boost电路</p>
+
+<p>使用XL6009E1的Boost升压电路</p>
+
+<p><em>注：XL60系列芯片没有内置欠压保护，在低压下可能生成～50V高压，需要改进，不建议在实际环境下使用</em></p>
 </article>
                         </div>
                     </div>
